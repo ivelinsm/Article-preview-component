@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 98vh;
+}
+
+.container {
+  width: 760px;
+  height: 300px;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+}
+.container #card-image {
+  width: 330px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#article-content {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#article-content h2 {
+  color: #48556a;
+  font-weight: 700;
+}
+#article-content p {
+  color: #6d7f97;
+  margin: 20px 0px;
+  line-height: 1.6em;
+}
+
+#additional-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#additional-info #portrait {
+  width: 35px;
+  border-radius: 50%;
+}
+#additional-info #author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding: 0px 14px;
+}
+#additional-info #author-info #author-name {
+  font-weight: 700;
+  color: #48556a;
+}
+#additional-info #author-info #article-date {
+  color: #9eafc2;
+  font-size: 11px;
+}
+
+#share-icon-container {
+  background-color: #6d7f97;
+  width: 25px;
+  height: 25px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#share-icon-container img {
+  padding: 10px;
+  transform: scale(0.8);
+}
+
+#share-icon-container:hover {
+  cursor: pointer;
+}
+
+#modal {
+  visibility: hidden;
+  position: absolute;
+  top: -40px;
+  background-color: #48556a;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 4px;
+  transform: translateX(-45%);
+  overflow: visible;
+  box-shadow: 0px 2px 16px -2px rgba(0, 0, 0, 0.5);
+}
+#modal #modal-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #9eafc2;
+  padding: 0px 6px 0px 4px;
+  font-size: 10px;
+}
+#modal img {
+  transform: scale(0.7);
+  margin: 0px 3px;
+}
+#modal img:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 340px;
+    height: auto;
+    flex-direction: column;
+  }
+  .container #card-image {
+    width: auto;
+    height: 250px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #article-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #article-content h2 {
+    color: #48556a;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  #article-content p {
+    color: #6d7f97;
+    margin: 20px 0px 30px;
+    line-height: 1.6em;
+    font-size: 16px;
+  }
+
+  #additional-info {
+    justify-content: space-between;
+    align-items: center;
+  }
+  #additional-info #portrait {
+    width: 55px;
+  }
+  #additional-info #author-info #author-name {
+    font-size: 16px;
+  }
+  #additional-info #author-info #article-date {
+    font-size: 14px;
+  }
+
+  #share-icon-container {
+    background-color: #6d7f97;
+    width: 35px;
+    height: 35px;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #share-icon-container img {
+    padding: 10px;
+    transform: scale(1.1);
+  }
+
+  #modal {
+    visibility: visible;
+    width: 340px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    height: 86px;
+    background-color: #48556a;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transform: translateX(0%);
+    overflow: visible;
+    box-shadow: 0px 2px 16px -2px rgba(0, 0, 0, 0.5);
+  }
+  #modal #modal-text {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #9eafc2;
+    padding: 0px 6px 0px 4px;
+    font-size: 16px;
+  }
+  #modal img {
+    transform: scale(1);
+    margin: 0px -15px;
+  }
+}/*# sourceMappingURL=style.css.map */
